@@ -4,7 +4,7 @@ function App() {
   return (
     <>
       <div className="background-video">
-        <video autoPlay muted controls={false} >
+        <video autoPlay muted controls={false}>
           <source
             src="https://dtn44hfc1xtr4.cloudfront.net/x/f/xfc9z5k.mp4?Expires=1710257844&Signature=ONqFluOQ1S6V~urxZ9RWLejzMEFlbtNcOU5-cw5O300gFRg7EKtUtX~R-U4YspIwvskFFD8wNCFR~wbT5HEh1hw562y4fpwFk-OcoAIf2JG7Nu2wHOOoBdVobnNaZydg7rjC7pGVWoEn1SXkrS2jD56nEqraxRH2bQr6gPsrrMeC-3BU4KY4bpoTYy-1pCp1MVxZzdPs68JjeeTHJQ10j9r6z0wsUoxOAj3apdT5ytqqOQIHLoZB76Lu1pUv7WpHkmWV0vwWs9zSHEitU577cqch0OP1vdznJ2lIKcFKTM8GXt0q0CIM7Ql7qk81SgTC9aHfNFjcBwmN8eNdAKzHsQ__&Key-Pair-Id=APKAIAOH4YUSYMI7SPBA"
             type="video/mp4"
@@ -14,7 +14,7 @@ function App() {
       </div>
       <div className="container">
         <div className="logo-container">
-          <img src="" alt="logo" />
+          <img src="src/assets/icon-AQD.png" alt="logo" />
         </div>
         <p className="title">Bientôt en ligne</p>
         <p>
@@ -25,10 +25,18 @@ function App() {
       <div className="social-medias">
         <p>pour patientez, retrouvez mes creations sur les réseaux</p>
         <div className="social-bubble-container">
-          <img src="src/assets/icon-facebook.svg" alt="" />
-          <img src="src/assets/icon-instagram.svg" alt="" />
-          <img src="src/assets/icon-mail.svg" alt="" />
-          <img src="src/assets/icon-thread.svg" alt="" />
+          <a href="https://www.facebook.com/p/Camille-Immo-Gaillot-100065234250445/?locale=mk_MK" target="_blank">
+            <img src="src/assets/icon-facebook.svg" alt="" />
+          </a>
+          <a href="https://www.instagram.com/l.amienoise.qui.dessine/" target="_blank">
+            <img src="src/assets/icon-instagram.svg" alt="" />
+          </a>
+          <a href="mailto:contact@amienoisequidessine.fr" target="_blank">
+            <img src="src/assets/icon-mail.svg" alt="" />
+          </a>
+          <a href="https://www.threads.net/@l.amienoise.qui.dessine" target="_blank">
+            <img src="src/assets/icon-thread.svg" alt="" />
+          </a>
         </div>
       </div>
     </>
