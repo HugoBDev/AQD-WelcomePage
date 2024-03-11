@@ -14,7 +14,7 @@ function App() {
       </div>
       <div className="container">
         <div className="logo-container">
-          <img src="src/assets/icon-AQD.png" alt="logo" />
+          <img src="//i.imgur.com/kgLSWA3.png" alt="logo" />
         </div>
         <p className="title">Bientôt en ligne</p>
         <p>
@@ -25,17 +25,17 @@ function App() {
       <div className="social-medias">
         <p>pour patientez, retrouvez mes creations sur les réseaux</p>
         <div className="social-bubble-container">
-          <a href="https://www.facebook.com/p/Camille-Immo-Gaillot-100065234250445/?locale=mk_MK" target="_blank">
-            <img src="src/assets/icon-facebook.svg" alt="" />
+          <a href="https://www.facebook.com/p/Camille-Immo-Gaillot-100065234250445/?locale=mk_MK" target="_blank" >
+            <img src="https://imgur.com/r1OjUk9.png" alt="" />
           </a>
           <a href="https://www.instagram.com/l.amienoise.qui.dessine/" target="_blank">
-            <img src="src/assets/icon-instagram.svg" alt="" />
+            <img src="https://imgur.com/uSezAle.png" alt="" />
           </a>
           <a href="mailto:contact@amienoisequidessine.fr" target="_blank">
-            <img src="src/assets/icon-mail.svg" alt="" />
+            <img src="https://imgur.com/OhC7ffc.png" alt="" />
           </a>
           <a href="https://www.threads.net/@l.amienoise.qui.dessine" target="_blank">
-            <img src="src/assets/icon-thread.svg" alt="" />
+            <img src="https://imgur.com/xrcrD0X.png" alt="" />
           </a>
         </div>
       </div>
