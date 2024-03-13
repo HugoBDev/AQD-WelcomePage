@@ -3,7 +3,7 @@ import "./welcomepage.scss";
 function App() {
 
   const video = document.querySelector('video'); // Ici je cible la balise video.
-  video!.playbackRate = 0.8; // Et ici je ralentis légèrement la video.
+  if(video) video.playbackRate = 0.8; // Et ici je ralentis légèrement la video.
 
   return (
     <>
@@ -23,9 +23,7 @@ function App() {
       {/* CONTENT */}
       <div className="content">
 
-        <div className="logo-container">
           <img src="//i.imgur.com/kgLSWA3.png" alt="logo" />
-        </div>
 
         <h1>L'Amiénoise qui dessine</h1>
         <h3>Bientôt en ligne</h3>
@@ -39,7 +37,7 @@ function App() {
 
 
       {/* FOOTER */}
-      <div className="social-medias">
+      <div className="footer">
         <p>pour patientez, retrouvez mes creations sur les réseaux</p>
         <div className="social-bubble-container">
           <a href="https://www.facebook.com/p/Camille-Immo-Gaillot-100065234250445/?locale=mk_MK" target="_blank" >
