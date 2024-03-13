@@ -23,27 +23,26 @@
     width: auto;
     height: 100vh;
     filter: blur(0.5rem);
-    transform: scale(1.1);
     position: relative;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(-50%) scale(1.5);
   }
 }
-.container {
-  display: inline-flex;
+.content {
+  padding: 4rem;
+  display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   gap: 2rem;
-  width: 100%;
-    padding-top: 4rem;
-    // padding: 0 1rem;
+  text-align: center;
   .logo-container {
     img {
       height: 20rem;
       width: 20rem;
     }
   }
+  
   .title {
     color: #000;
     text-align: center;
@@ -52,6 +51,7 @@
     font-weight: 700;
     line-height: normal;
   }
+
   p {
     color: #000;
     text-align: center;
@@ -67,13 +67,14 @@
   align-items: center;
   justify-content: center;
   width: 100%;
-    padding-bottom: 4rem;
+  padding-bottom: 4rem;
+  gap: 1rem;
+
+  .social-bubble-container {
+    display: flex;
     gap: 1rem;
-    .social-bubble-container{
-        display: flex;
-        gap: 1rem;
-        img{
-            cursor: pointer;
-        }
+    img {
+      cursor: pointer;
     }
+  }
 }
