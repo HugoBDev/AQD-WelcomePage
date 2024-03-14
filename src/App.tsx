@@ -26,16 +26,16 @@ function App() {
         <p>pour patientez, retrouvez mes creations sur les réseaux</p>
         <div className="social-bubble-container">
           <a href="https://www.facebook.com/p/Camille-Immo-Gaillot-100065234250445/?locale=mk_MK" target="_blank" >
-            <img src="https://imgur.com/r1OjUk9.png" alt="" />
+            <img src="public/images/icon-facebook.svg" alt="" />
           </a>
           <a href="https://www.instagram.com/l.amienoise.qui.dessine/" target="_blank">
-            <img src="https://imgur.com/uSezAle.png" alt="" />
+            <img src="public/images/icon-instagram.svg" alt="" />
           </a>
           <a href="mailto:contact@amienoisequidessine.fr" target="_blank">
-            <img src="https://imgur.com/OhC7ffc.png" alt="" />
+            <img src="public/images/icon-mail.svg" alt="" />
           </a>
           <a href="https://www.threads.net/@l.amienoise.qui.dessine" target="_blank">
-            <img src="https://imgur.com/xrcrD0X.png" alt="" />
+            <img src="public/images/icon-thread.svg" alt="" />
           </a>
         </div>
       </div>
