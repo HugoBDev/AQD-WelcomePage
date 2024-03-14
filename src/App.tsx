@@ -28,8 +28,8 @@ function App() {
         <h1>L'Amiénoise qui dessine</h1>
         <h3>Bientôt en ligne</h3>
         <p>
-          Vous pourrez retrouver ici les créations de l’amiénoise qui dessine,
-          sur une carte interactive de la ville d’Amiens.
+          Ici, vous pourrez retrouver ici les dessins et aquarelles de l’amiénoise qui dessine...
+          
         </p>
 
       </div>
@@ -38,7 +38,7 @@ function App() {
 
       {/* FOOTER */}
       <div className="footer">
-        <p>pour patientez, retrouvez mes creations sur les réseaux</p>
+        <p>En attendant, retrouvez mes creations sur les réseaux sociaux !</p>
         <div className="social-bubble-container">
           <a href="https://www.facebook.com/p/Camille-Immo-Gaillot-100065234250445/?locale=mk_MK" target="_blank" >
             <img src="https://imgur.com/r1OjUk9.png" alt="" />
