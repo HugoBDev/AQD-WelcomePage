@@ -41,7 +41,7 @@ function App() {
         <p>En attendant, retrouvez mes creations sur les réseaux sociaux !</p>
         <div className="social-bubble-container">
           <a href="https://www.facebook.com/p/Camille-Immo-Gaillot-100065234250445/?locale=mk_MK" target="_blank" >
-            <img src="https://imgur.com/r1OjUk9.png" alt="" />
+            <img src="public/assets/icon-facebook.svg" alt="" />
           </a>
           <a href="https://www.instagram.com/l.amienoise.qui.dessine/" target="_blank">
             <img src="https://imgur.com/uSezAle.png" alt="" />
