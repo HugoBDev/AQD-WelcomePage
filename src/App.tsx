@@ -1,28 +1,43 @@
 import "./welcomepage.scss";
 
 function App() {
+
+  const video = document.querySelector('video'); // Ici je cible la balise video.
+  if(video) video.playbackRate = 0.8; // Et ici je ralentis légèrement la video.
+
   return (
     <>
       <div className="background-video">
-        <video autoPlay muted controls={false}>
+        <video autoPlay muted controls={false} loop >
           <source
-            src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+            src="src/assets/aqd-intro-video.mp4"
             type="video/mp4"
           />
           Video not supported.
         </video>
       </div>
-      <div className="container">
-        <div className="logo-container">
+
+
+
+
+      {/* CONTENT */}
+      <div className="content">
+
           <img src="//i.imgur.com/kgLSWA3.png" alt="logo" />
-        </div>
-        <p className="title">Bientôt en ligne</p>
+
+        <h1>L'Amiénoise qui dessine</h1>
+        <h3>Bientôt en ligne</h3>
         <p>
-          Vous pourrez retrouver ici les créations de l’amienoise qui dessine,
-          sur une carte d’Amiens
+          Vous pourrez retrouver ici les créations de l’amiénoise qui dessine,
+          sur une carte interactive de la ville d’Amiens.
         </p>
+
       </div>
-      <div className="social-medias">
+
+
+
+      {/* FOOTER */}
+      <div className="footer">
         <p>pour patientez, retrouvez mes creations sur les réseaux</p>
         <div className="social-bubble-container">
           <a href="https://www.facebook.com/p/Camille-Immo-Gaillot-100065234250445/?locale=mk_MK" target="_blank" >
