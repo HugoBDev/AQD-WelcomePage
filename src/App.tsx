@@ -29,7 +29,7 @@ function App() {
         <h1>L'Amiénoise qui dessine</h1>
         <h3>Bientôt en ligne</h3>
         <p>
-          Ici, vous pourrez retrouver ici les dessins et aquarelles de l’amiénoise qui dessine...
+          Ici, vous pourrez retrouver les dessins et aquarelles de l’amiénoise qui dessine...
           
         </p>
 
