@@ -8,7 +8,7 @@ function App() {
   return (
     <>
       <div className="background-video">
-        <video autoPlay muted controls={false} loop >
+        <video autoPlay muted controls={false} loop playsInline>
           <source
             src="assets/aqd-intro-video.mp4"
             type="video/mp4"
