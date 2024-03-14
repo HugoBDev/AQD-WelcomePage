@@ -12,6 +12,7 @@ function App() {
           <source
             src="assets/aqd-intro-video.mp4"
             type="video/mp4"
+            
           />
           Video not supported.
         </video>
@@ -23,7 +24,7 @@ function App() {
       {/* CONTENT */}
       <div className="content">
 
-          <img src="//i.imgur.com/kgLSWA3.png" alt="logo" />
+          <img src="//i.imgur.com/kgLSWA3.png" alt="logo de l'amiénoise qui dessine" />
 
         <h1>L'Amiénoise qui dessine</h1>
         <h3>Bientôt en ligne</h3>
@@ -41,16 +42,16 @@ function App() {
         <p>En attendant, retrouvez mes creations sur les réseaux sociaux !</p>
         <div className="social-bubble-container">
           <a href="https://www.facebook.com/p/Camille-Immo-Gaillot-100065234250445/?locale=mk_MK" target="_blank" >
-            <img src="assets/icon-facebook.svg" alt="" />
+            <img src="assets/icon-facebook.svg" alt="logo amiénoise facebook" />
           </a>
           <a href="https://www.instagram.com/l.amienoise.qui.dessine/" target="_blank">
-            <img src="https://imgur.com/uSezAle.png" alt="" />
+            <img src="assets/icon-instagram.svg" alt="logo amiénoise instagram" />
           </a>
           <a href="mailto:contact@amienoisequidessine.fr" target="_blank">
-            <img src="https://imgur.com/OhC7ffc.png" alt="" />
+            <img src="assets/icon-mail.svg" alt="logo amiénoise mail" />
           </a>
           <a href="https://www.threads.net/@l.amienoise.qui.dessine" target="_blank">
-            <img src="https://imgur.com/xrcrD0X.png" alt="" />
+            <img src="assets/icon-thread.svg" alt="logo amiénoise thread" />
           </a>
         </div>
       </div>
