@@ -10,7 +10,7 @@ function App() {
       <div className="background-video">
         <video autoPlay muted controls={false} loop >
           <source
-            src="src/assets/aqd-intro-video.mp4"
+            src="assets/aqd-intro-video.mp4"
             type="video/mp4"
           />
           Video not supported.
@@ -41,7 +41,7 @@ function App() {
         <p>En attendant, retrouvez mes creations sur les réseaux sociaux !</p>
         <div className="social-bubble-container">
           <a href="https://www.facebook.com/p/Camille-Immo-Gaillot-100065234250445/?locale=mk_MK" target="_blank" >
-            <img src="public/assets/icon-facebook.svg" alt="" />
+            <img src="assets/icon-facebook.svg" alt="" />
           </a>
           <a href="https://www.instagram.com/l.amienoise.qui.dessine/" target="_blank">
             <img src="https://imgur.com/uSezAle.png" alt="" />
