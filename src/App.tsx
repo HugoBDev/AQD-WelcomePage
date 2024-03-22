@@ -1,9 +1,21 @@
+import { useRef } from 'react'
 import './welcomepage.scss'
 
 function App() {
+
+  const contentRef = useRef<HTMLDivElement>(null)
+  if(contentRef && contentRef.current){
+    
+    contentRef.current.addEventListener("focus", (event : any) => {
+      console.log(event)
+      
+    })
+  }
+
   const video = document.querySelector('video') // Ici je cible la balise video.
   if (video) video.playbackRate = 0.8 // Et ici je ralentis légèrement la video.
 
+  
   return (
     <>
       <div className="background-video">
@@ -26,7 +38,7 @@ function App() {
       </div>
 
       {/* CONTENT */}
-      <div className="content">
+      <div className="content" ref={contentRef}>
         <div className="blur-bg"></div>
         <p>
           En attendant de pouvoir regarder notre ville d'Amiens à travers mes
