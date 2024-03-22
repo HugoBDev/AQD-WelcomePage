@@ -1,21 +1,27 @@
-import { useRef } from 'react'
-import './welcomepage.scss'
+import { useRef } from "react";
+import "./welcomepage.scss";
 
 function App() {
-
-  const contentRef = useRef<HTMLDivElement>(null)
-  if(contentRef && contentRef.current){
-    
-    contentRef.current.addEventListener("focus", (event : any) => {
-      console.log(event)
-      
-    })
-  }
-
-  const video = document.querySelector('video') // Ici je cible la balise video.
-  if (video) video.playbackRate = 0.8 // Et ici je ralentis légèrement la video.
-
+  const logoRef = useRef<HTMLImageElement>(null);
+ 
+  const headerReducing = () => {
+    if (logoRef && logoRef.current) {
+      logoRef.current!.style.width = "8rem";
+      logoRef.current!.style.paddingTop = "1rem";
+    }
+  };
   
+  const headerScaling = () => {
+    
+    if (logoRef && logoRef.current) {
+      logoRef.current!.style.width = "18rem";
+      logoRef.current!.style.paddingTop = "0";
+    }
+  };
+
+  const video = document.querySelector("video"); // Ici je cible la balise video.
+  if (video) video.playbackRate = 0.8; // Et ici je ralentis légèrement la video.
+
   return (
     <>
       <div className="background-video">
@@ -27,8 +33,9 @@ function App() {
 
       {/* HEADER */}
 
-      <div id="header">
+      <div id="header" onTouchStart={headerScaling}>
         <img
+          ref={logoRef}
           src="//i.imgur.com/kgLSWA3.png"
           alt="logo de l'amiénoise qui dessine"
         />
@@ -38,7 +45,7 @@ function App() {
       </div>
 
       {/* CONTENT */}
-      <div className="content" ref={contentRef}>
+      <div className="content" onTouchStart={headerReducing}>
         <div className="blur-bg"></div>
         <p>
           En attendant de pouvoir regarder notre ville d'Amiens à travers mes
@@ -67,7 +74,7 @@ function App() {
           les réussissant on change les plans.
         </p>
         <p>
-          {' '}
+          {" "}
           C’est donc avec mon master en droit des affaires que j'ai opté pour un
           job d’agent immobilier qui aura fait mon bonheur professionnel pendant
           12 ans.
@@ -129,7 +136,7 @@ function App() {
       </div>
 
       {/* FOOTER */}
-      <div className="footer">
+      <div className="footer" onTouchStart={headerScaling}>
         <p>En attendant, retrouvez mes creations sur les réseaux sociaux !</p>
         <div className="social-bubble-container">
           <a
@@ -159,7 +166,7 @@ function App() {
         </div>
       </div>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
