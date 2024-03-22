@@ -4,15 +4,14 @@ import "./welcomepage.scss";
 function App() {
   const logoRef = useRef<HTMLImageElement>(null);
  
-  const headerReducing = () => {
+  const expandHeader = () => {
     if (logoRef && logoRef.current) {
       logoRef.current!.style.width = "8rem";
       logoRef.current!.style.paddingTop = "1rem";
     }
   };
   
-  const headerScaling = () => {
-    
+  const minimizeHeader = () => {
     if (logoRef && logoRef.current) {
       logoRef.current!.style.width = "18rem";
       logoRef.current!.style.paddingTop = "0";
@@ -33,7 +32,7 @@ function App() {
 
       {/* HEADER */}
 
-      <div id="header" onTouchStart={headerScaling}>
+      <div id="header" onTouchStart={minimizeHeader}>
         <img
           ref={logoRef}
           src="//i.imgur.com/kgLSWA3.png"
@@ -45,7 +44,7 @@ function App() {
       </div>
 
       {/* CONTENT */}
-      <div className="content" onTouchStart={headerReducing}>
+      <div className="content" onTouchStart={expandHeader}>
         <div className="blur-bg"></div>
         <p>
           En attendant de pouvoir regarder notre ville d'Amiens à travers mes
@@ -136,7 +135,7 @@ function App() {
       </div>
 
       {/* FOOTER */}
-      <div className="footer" onTouchStart={headerScaling}>
+      <div className="footer" onTouchStart={minimizeHeader}>
         <p>En attendant, retrouvez mes creations sur les réseaux sociaux !</p>
         <div className="social-bubble-container">
           <a

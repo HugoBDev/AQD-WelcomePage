@@ -50,7 +50,7 @@ img {
   video {
     width: auto;
     height: 100vh;
-    filter: blur(0.5rem);
+    filter:brightness(1.5) blur(0.5rem) grayscale(0.5);
     position: absolute;
     left: 50%;
     transform: translateX(-50%) scale(2.1) rotate(90deg);
@@ -66,6 +66,7 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  mask-image: linear-gradient(transparent 0%, #000 10% , #000 90%,  transparent 100%);
   
   .blur-bg{
     background: red;
