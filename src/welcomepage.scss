@@ -28,6 +28,15 @@
 }
 
 
+ #header{
+padding: 2rem;
+img {
+  width: 18rem;
+  padding-top : 0;
+  transition: all 1000ms ease-in-out;
+}
+ }
+
 .background-video {
   overflow: hidden;
   z-index: -1;
@@ -42,9 +51,9 @@
     width: auto;
     height: 100vh;
     filter: blur(0.5rem);
-    position: relative;
+    position: absolute;
     left: 50%;
-    transform: translateX(-50%) scale(1.5);
+    transform: translateX(-50%) scale(2.1) rotate(90deg);
   }
 }
 
@@ -52,11 +61,23 @@
   padding: 2rem;
   justify-content: center;
   gap: 2rem;
-
-  img {
-    max-width: 20rem;
+  position: relative;
+  overflow-y:scroll;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  
+  .blur-bg{
+    background: red;
+    position: absolute;
+    
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
   }
-
+  
+  
   p {
     color: #000;
     font-size: 1rem;
